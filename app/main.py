@@ -3,10 +3,11 @@ class Car:
             self,
             comfort_class: int,
             clean_mark: int,
-            brand: str) -> None:
-        self.comfort_class = comfort_class
-        self.clean_mark = clean_mark
-        self.brand = brand
+            brand: str
+    ) -> None:
+            self.comfort_class = comfort_class
+            self.clean_mark = clean_mark
+            self.brand = brand
 
 
 class CarWashStation:
@@ -16,12 +17,13 @@ class CarWashStation:
             clean_power: int,
             clean_marker: int,
             average_rating: float,
-            count_of_ratings: int) -> None:
-        self.distance_from_city_center = distance_from_city_center
-        self.clean_power = clean_power
-        self.clean_marker = clean_marker
-        self.average_rating = average_rating
-        self.count_of_ratings = count_of_ratings
+            count_of_ratings:
+    ) -> None:
+            self.distance_from_city_center = distance_from_city_center
+            self.clean_power = clean_power
+            self.clean_marker = clean_marker
+            self.average_rating = average_rating
+            self.count_of_ratings = count_of_ratings
 
     def serve_cars(self, cars: list[Car]) -> float:
         total_income = 0
