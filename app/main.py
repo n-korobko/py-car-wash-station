@@ -28,10 +28,10 @@ class CarWashStation:
         for car in cars:
             if car.clean_mark < self.clean_power:
                 income = (
-                        car.comfort_class
-                        * (self.clean_power - car.clean_mark)
-                        * self.average_rating
-                        / self.distance_from_city_center
+                    car.comfort_class
+                    * (self.clean_power - car.clean_mark)
+                    * self.average_rating
+                    / self.distance_from_city_center
                 )
                 total_income += income
                 car.clean_mark = self.clean_power
